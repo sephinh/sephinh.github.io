@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>惨剧，手机复活记 | 半颗星辰</title>
+<link rel="shortcut icon" href="https://iiii.space/favicon.ico?v=1675953371535">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://iiii.space/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="惨剧，手机复活记 | 半颗星辰 - Atom Feed" href="https://iiii.space/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+
+娃一泡尿浇充电头上，然后晚上迷迷糊糊插上充电，早起来一看，已经焦了。。切了吧，嗯，那是不可能的，揍，看在她萌萌的面上，那也是不可能的，无奈自己动手吧，还好mate7的主板和电源板是分开的，首富家购入一个电源板，看起来很简单是吧，动手之前..." />
+    <meta name="keywords" content="Do some useless" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://iiii.space">
+  <img class="avatar" src="https://iiii.space/images/avatar.png?v=1675953371535" alt="">
+  </a>
+  <h1 class="site-title">
+    半颗星辰
+  </h1>
+  <p class="site-description">
+    A.T.Filed
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://iiii.space/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              惨剧，手机复活记
+            </h2>
+            <div class="post-info">
+              <span>
+                2016-06-24
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://iiii.space/tag/useless/" class="post-tag">
+                  # Do some useless
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://iiii.space/post-images/tlWy3FhUO.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p><img src="https://iiii.space/post-images/1672591697681.jpg" alt="" loading="lazy"><br>
+<img src="https://iiii.space/post-images/1672591705336.jpg" alt="" loading="lazy"></p>
+<center>娃一泡尿浇充电头上，然后晚上迷迷糊糊插上充电，早起来一看，已经焦了。。切了吧，嗯，那是不可能的，揍，看在她萌萌的面上，那也是不可能的，无奈自己动手吧，还好mate7的主板和电源板是分开的，首富家购入一个电源板，看起来很简单是吧，动手之前也是这么想的，然后这个后盖板子，拆了两小时，指甲都快扣掉了，终于给拆掉了，后面就顺理成章，满血复活了。。</center>
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://iiii.space/98oZ6y4ZS/">
+              <h3 class="post-title">
+                还能再热点吗
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://iiii.space/" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;萨菲罗斯 </a>
+  <a class="rss" href="https://iiii.space/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

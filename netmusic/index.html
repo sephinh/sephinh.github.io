@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>网易云音乐降级4.3.1 PLAY版 | 半颗星辰</title>
+<link rel="shortcut icon" href="https://iiii.space/favicon.ico?v=1675953371535">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://iiii.space/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="网易云音乐降级4.3.1 PLAY版 | 半颗星辰 - Atom Feed" href="https://iiii.space/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="    虽然听歌已经有YouTube Music，Spotify，Tidal，但是网易云可能听的时间长了，推荐歌单很靠谱，虽说版权问题越来越难，但一直没放弃在用。Android端一直用的是PLAY版的4.3.1版本的网易云音乐，简介明了无更..." />
+    <meta name="keywords" content="Do some useless" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://iiii.space">
+  <img class="avatar" src="https://iiii.space/images/avatar.png?v=1675953371535" alt="">
+  </a>
+  <h1 class="site-title">
+    半颗星辰
+  </h1>
+  <p class="site-description">
+    A.T.Filed
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://iiii.space/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              网易云音乐降级4.3.1 PLAY版
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-11-05
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://iiii.space/tag/useless/" class="post-tag">
+                  # Do some useless
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://iiii.space/post-images/netmusic.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>    虽然听歌已经有YouTube Music，Spotify，Tidal，但是网易云可能听的时间长了，推荐歌单很靠谱，虽说版权问题越来越难，但一直没放弃在用。Android端一直用的是PLAY版的4.3.1版本的网易云音乐，简介明了无更新提示，用的好好的，前两天突然登录掉了，然后网易邮箱再登录就提示让更新了，蛋疼之余只能找了个7.x的据说还行的版本先用上了，回头想adb降级一下就ok了，中间被每次打开的更新提示烦了好久，今天懒癌缓解赶快折腾。</p>
+<p>    电脑上使用adb链接，结果手机那个同意usb调试的确定死活点不了，提示被遮挡，查找解决方案无非就是什么悬浮按钮啥的，使用无果，强行重启了一遍好了，<br>
+结果：<code>*adb install -r -d app.apk*​</code>，<br>
+命令提示失败，说什么sdk高版本降低版本有问题，好吧，那就保资料卸载，<br>
+查找网易云的包名：<code>pm list packages：*com.netease.cloudmusic*</code>，<br>
+然后：<code>*adb shell pm uninstall -k com.netease.cloudmusic*</code>，<br>
+保资料卸载后：<code>*adb install 路径/apk </code> 安装4.3.1* 版，<br>
+终于成功了，结果手机一点开，提示旧版应用，然后就闪退了，WTF,原来4.31一直在用只是不能登录，这不至于提示个旧版就不能用了啊，无奈清除软件缓存重新打开了，但是登录依然回到起点无解。。</p>
+<p>    难不成还得低一点的能登录的版本降级才好使，上酷安寻找一番，正巧看见一老哥解决方案，他寻思网易总不能把所有版本都禁止登录了吧，果然让他找到个4.3.4版本的国内版，可以登录，但有更新提示，正好拿来降级用，下载安装登录，可以登录，保资料降级，终于打开了熟悉的4.3.1无更新提示的界面，终于折腾舒服了。。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://iiii.space/1001/">
+              <h3 class="post-title">
+                国庆
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://iiii.space/" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;萨菲罗斯 </a>
+  <a class="rss" href="https://iiii.space/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
